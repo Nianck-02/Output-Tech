@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.projeto.javafxmaven.Controles.Tela_conta_Usuario">
+   <left>
+      <VBox alignment="CENTER" prefHeight="810.0" prefWidth="262.0" spacing="10.0" style="-fx-background-color: #30597A;" stylesheets="@../style/estilo.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="208.0" prefWidth="209.0" spacing="4.0">
+               <children>
+                  <ImageView fitHeight="104.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Nome do usuário">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" text="Edit profile">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </VBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER" prefHeight="45.0" prefWidth="200.0" spacing="2.0" stylesheets="@../style/estilo.css">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/dashbord.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btndashboard" mnemonicParsing="false" onAction="#tela_dashborad" prefHeight="25.0" prefWidth="128.0" stylesheets="@../style/estilo.css" text="Dashborad">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </HBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER" layoutX="30.0" layoutY="393.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="200.0" spacing="2.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/services.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnservices" mnemonicParsing="false" onAction="#tela_services" prefHeight="25.0" prefWidth="155.0" stylesheets="@../style/estilo.css" text="Search for services">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER" layoutX="30.0" layoutY="415.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="200.0" spacing="2.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/clientes.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btncontacts" mnemonicParsing="false" onAction="#tela_chat" prefHeight="25.0" prefWidth="128.0" stylesheets="@../style/estilo.css" text="Contacts">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </HBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER" layoutX="30.0" layoutY="438.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="200.0" spacing="2.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/statistich.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnstatistichs" mnemonicParsing="false" onAction="#tela_statisticas" prefHeight="25.0" prefWidth="128.0" stylesheets="@../style/estilo.css" text="Statistichs">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </HBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER" layoutX="30.0" layoutY="483.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/conta.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnaccout" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" stylesheets="@../style/estilo.css" text="Account">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </HBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="200.0" spacing="2.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/carregar_Copia.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnpublicar" mnemonicParsing="false" onAction="#tela_publicar" prefHeight="25.0" prefWidth="128.0" stylesheets="@../style/estilo.css" text="publish service">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </HBox>
+            <HBox accessibleRole="BUTTON" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="200.0" spacing="2.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/help.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnhelp" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" stylesheets="@../style/estilo.css" text="Help">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #3F637F;" styleClass="right-side-border" stylesheets="@../style/estilo.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="91.0" prefWidth="1064.0" text="Profile Settings">
+               <font>
+                  <Font name="Segoe UI Bold" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" right="50.0" />
+               </padding>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="473.0" prefWidth="1064.0" spacing="30.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="1024.0" text="Profile details">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="1064.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="117.0" text="Name">
+                           <font>
+                              <Font name="Segoe UI" size="17.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="200.0" prefWidth="140.0" />
+                        <TextField fx:id="txtname" prefHeight="25.0" prefWidth="404.0" styleClass="custom-textfield3" stylesheets="@../style/estilo.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="56.0" prefHeight="31.0" prefWidth="1064.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="117.0" text="Email">
+                           <font>
+                              <Font name="Segoe UI" size="17.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="200.0" prefWidth="140.0" />
+                        <TextField fx:id="txtemail" prefHeight="25.0" prefWidth="404.0" styleClass="custom-textfield3" stylesheets="@../style/estilo.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="87.0" prefHeight="31.0" prefWidth="1064.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="117.0" text="CPF">
+                           <font>
+                              <Font name="Segoe UI" size="17.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="200.0" prefWidth="140.0" />
+                        <TextField fx:id="txtcpf" prefHeight="25.0" prefWidth="404.0" styleClass="custom-textfield3" stylesheets="@../style/estilo.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="118.0" prefHeight="31.0" prefWidth="1064.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="191.0" text="Data de nascimento">
+                           <font>
+                              <Font name="Segoe UI" size="17.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="44.0" prefWidth="66.0" />
+                        <DatePicker fx:id="dtkdatansac" prefHeight="44.0" prefWidth="407.0" styleClass="custom-textfield3" stylesheets="@../style/estilo.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="149.0" prefHeight="31.0" prefWidth="1064.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="117.0" text="Estado(UF)">
+                           <font>
+                              <Font name="Segoe UI" size="17.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="200.0" prefWidth="140.0" />
+                        <ComboBox fx:id="cmbUF" prefHeight="24.0" prefWidth="414.0" styleClass="custom-textfield3" stylesheets="@../style/estilo.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="179.0" prefHeight="31.0" prefWidth="1064.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="117.0" text="Cidade">
+                           <font>
+                              <Font name="Segoe UI" size="17.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="200.0" prefWidth="140.0" />
+                        <TextField fx:id="txtcidade" prefHeight="35.0" prefWidth="416.0" styleClass="custom-textfield3" stylesheets="@../style/estilo.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="183.0" prefHeight="31.0" prefWidth="1064.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="117.0" text="Senha">
+                           <font>
+                              <Font name="Segoe UI" size="17.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="200.0" prefWidth="140.0" />
+                        <PasswordField fx:id="pswsenha" prefHeight="25.0" prefWidth="410.0" styleClass="custom-textfield3" stylesheets="@../style/estilo.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="60.0" layoutY="452.0" prefHeight="31.0" prefWidth="1064.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="117.0" text="Tipo de conta">
+                           <font>
+                              <Font name="Segoe UI" size="17.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="200.0" prefWidth="140.0" />
+                        <MenuButton fx:id="cmbtipo" mnemonicParsing="false" prefHeight="41.0" prefWidth="160.0" styleClass="combo-box1" stylesheets="@../style/estilo.css" text="Comum">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="135.0" prefWidth="1064.0" spacing="19.0">
+               <children>
+                  <Button fx:id="btncancelar" mnemonicParsing="false" onAction="#cancelar" prefHeight="44.0" prefWidth="158.0" styleClass="oval-button" stylesheets="@../style/estilo.css" text="Cancelar">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnalterar" layoutX="375.0" layoutY="38.0" mnemonicParsing="false" onAction="#alterardados" prefHeight="44.0" prefWidth="185.0" styleClass="oval-button" stylesheets="@../style/estilo.css" text="Salvar alteração">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnsair" layoutX="463.0" layoutY="38.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="158.0" styleClass="oval-button" stylesheets="@../style/estilo.css" text="Sair da conta">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

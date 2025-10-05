@@ -1,0 +1,383 @@
+.white-background {
+    -fx-background-color: white;
+}
+
+.right-side-border {
+    -fx-border-color: #6F6F6F;
+    -fx-border-width: 0 1 0 0; 
+}
+
+.search-container{
+    -fx-border-color: #6F6F6F;
+    -fx-border-radius: 30;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0)
+}
+
+.primary-color{
+    -fx-background-color: #EFF2F6;
+}
+
+.card{
+    -fx-background-color: #fff;
+    -fx-background-radius:10;
+}
+
+.card2{
+    -fx-background-color: #30597A;
+    -fx-background-radius:10;
+}
+
+.button{
+     -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: black;
+    -fx-padding: 0;
+}
+
+.combobox{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+
+}
+
+.textfield-underlineblack{
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 2 0;             
+    -fx-border-color: transparent transparent black transparent;
+    -fx-text-fill: black;                 
+    -fx-font-size: 14px;
+}
+
+.textfield-underlinewhite {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 2 0;          /* apenas borda inferior */
+    -fx-border-color: transparent transparent white transparent;
+    -fx-text-fill: white;              /* cor do texto */
+    -fx-prompt-text-fill: #cccccc;     /* cor do placeholder */
+    -fx-font-size: 14px;
+}
+
+.button-dark {
+    -fx-background-color: #1c2026;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0.1, 0, 2);
+    -fx-transition: all 0.3s ease;
+}
+.button-dark3 {
+    -fx-background-color: #1c2026;          /* Cor de fundo */
+    -fx-text-fill: white;                   /* Cor do texto */
+    -fx-font-size: 14px;                    /* Tamanho da fonte */
+    -fx-font-weight: bold;                  /* Texto em negrito */
+    -fx-padding: 8 16;                      /* Espaçamento interno */
+    -fx-cursor: hand;                       /* Cursor em formato de mão */
+    -fx-border-color: transparent;          /* Sem borda visível */
+    -fx-background-radius: 8;               /* Cantos arredondados */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0.1, 0, 2); /* Sombra */
+}
+
+
+.checkbox-custom {
+    -fx-background-color: transparent;
+    -fx-border-color: #1c2026;
+    -fx-border-width: 2;
+    -fx-border-radius: 3;
+    -fx-padding: 4 6 4 6;
+    -fx-text-fill: #1c2026;
+    -fx-font-weight: normal;
+}
+
+/* Para o ícone de seleção (check) */
+.checkbox > .box {
+    -fx-background-color: transparent;
+    -fx-border-color: #1c2026;
+    -fx-border-width: 2;
+    -fx-border-radius: 3;
+}
+
+.checkbox:selected > .box {
+    -fx-background-color: #1c2026;
+    -fx-border-color: #1c2026;
+}
+
+.checkbox:selected > .box > .mark {
+    -fx-background-color: white;
+}
+
+.button-senha{
+      -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #1c2026 transparent;
+    -fx-border-width: 0 0 2 0;
+    -fx-text-fill: #1c2026; /* cor do texto */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0;
+    -fx-padding: 4 2 4 2;
+    -fx-cursor: hand;
+}
+
+.combo-box1 {
+    -fx-background-color: transparent; 
+    -fx-border-color: #1c2026;        
+    -fx-border-width: 1;
+    -fx-padding: 4 6;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: #1c2026;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+}
+
+.date-picker {
+    -fx-background-color: transparent;
+    -fx-border-color: #1c2026;
+    -fx-border-width: 1;
+    -fx-padding: 4 6;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: #1c2026;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+}
+
+.date-picker .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #1c2026;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+/* Botão do calendário */
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.date-picker .arrow {
+    -fx-background-color: #1c2026;
+}
+
+.hbox-style {
+    -fx-background-color: #ffffff; /* Fundo branco */
+    -fx-background-radius: 10; /* Cantos arredondados */
+    -fx-padding: 10 15 10 15; /* Espaçamento interno */
+    -fx-spacing: 10; /* Espaço entre elementos */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2); /* Sombra suave */
+    -fx-border-color: #e0e0e0; /* Borda leve */
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+}
+
+.label-style {
+    -fx-font-family: "Segoe UI", sans-serif; /* Fonte moderna */
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.icon-style {
+    -fx-font-size: 18px;
+    -fx-text-fill: #4A90E2; /* Cor azul para ícones */
+}
+
+.textarea-style {
+    -fx-background-color: #ffffff; /* Fundo branco */
+    -fx-border-color: #e0e0e0; /* Borda leve */
+    -fx-border-width: 1;
+    -fx-padding: 8 12 8 12; /* Espaçamento interno */
+    -fx-font-family: "Segoe UI", sans-serif; /* Fonte moderna */
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Cor do texto */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 3, 0, 0, 1); /* Sombra suave */
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+
+.textfield-style {
+    -fx-background-color: #ffffff; /* Fundo branco */
+    -fx-border-color: #1c2026; /* Borda leve */
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-font-family: "Segoe UI", sans-serif; /* Fonte moderna */
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Cor do texto */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 3, 0, 0, 1); /* Sombra suave */
+}
+.textfield-style2 {
+    -fx-background-color: #ffffff; /* Fundo branco */
+    -fx-background-radius: 6;
+    -fx-padding: 8 2 1 6; /* Espaçamento interno */
+    -fx-font-family: "Segoe UI", sans-serif; /* Fonte moderna */
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Cor do texto */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 3, 0, 0, 1); /* Sombra suave */
+}
+
+
+.textfield-style:focused {
+    -fx-border-color: #4A90E2; /* Azul ao focar */
+    -fx-border-width: 1.5;
+    -fx-effect: dropshadow(gaussian, rgba(74,144,226,0.3), 4, 0, 0, 2);
+}
+
+.vbox-card1 {
+    -fx-background-color: #ffffff; /* Fundo branco */
+    -fx-background-radius: 10; /* Cantos arredondados */
+    -fx-border-color: #1c2026; /* Roxo suave */
+    -fx-border-width: 1.5; /* Espessura da borda */
+    -fx-border-radius: 10; /* Cantos arredondados da borda */
+    -fx-padding: 20; /* Espaçamento interno */
+    -fx-spacing: 10; /* Espaçamento entre elementos do VBox */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 4, 0, 0, 2); /* Sombra suave */
+}
+
+.check-box2 {
+    -fx-padding: 5 0 5 0;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.check-box2 .box {
+    -fx-background-color: #ffffff; /* Fundo branco */
+    -fx-border-color: #cccccc;     /* Borda cinza clara */
+    -fx-border-width: 2;
+    -fx-border-radius: 5;          /* Cantos levemente arredondados */
+    -fx-background-radius: 5;
+    -fx-pref-width: 16;
+    -fx-pref-height: 16;
+}
+
+.check-box2:selected .box {
+    -fx-background-color: #1c2026; /* Roxo quando selecionado */
+    -fx-border-color: #1c2026;
+}
+
+.check-box2:selected .mark {
+    -fx-background-color: white; /* Cor do "check" */
+    -fx-padding: 2;
+}
+
+.menu-button1 {
+    -fx-background-color: #ffffff; /* Fundo branco */
+    -fx-background-radius: 8;      /* Cantos arredondados */
+    -fx-border-color: #1c2026;     /* Borda roxa */
+    -fx-border-width: 1.5;
+    -fx-border-radius: 8;
+    -fx-padding: 8 16;             /* Espaçamento interno */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #1c2026;        /* Texto roxo */
+    -fx-cursor: hand;
+}
+
+.menu-button1:hover {
+    -fx-background-color: #f9f5ff; /* Leve roxo claro ao passar o mouse */
+}
+
+.menu-button1:focused {
+    -fx-border-color: #1c2026; /* Roxo um pouco mais forte ao focar */
+}
+
+.toggle-button {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8;
+    -fx-border-color: #1c2026;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 8;
+    -fx-text-fill: #1c2026;
+    -fx-padding: 8 16;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.toggle-button:hover {
+    -fx-background-color: #f9f5ff;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #1c2026;
+    -fx-text-fill: #1c2026;
+    -fx-border-color:#1c2026;
+}
+
+
+.card-pane {
+    -fx-background-color: #ffffff;  /* Fundo branco */
+    -fx-background-radius: 12;      /* Cantos arredondados */
+    -fx-border-color: #1c2026;      /* Borda roxa */
+    -fx-border-width: 1.5;
+    -fx-border-radius: 12;
+    -fx-padding: 20;                /* Espaçamento interno */
+    -fx-spacing: 12;                /* Espaçamento entre elementos se for VBox */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 4, 0, 0, 2); /* Sombra suave */
+}
+
+
+.card-pane2 {
+    -fx-background-color: #ffffff;  /* Fundo branco */
+    -fx-border-color: #1c2026;      /* Borda roxa */
+    -fx-border-width: 1.5;
+    -fx-padding: 20;                /* Espaçamento interno */
+    -fx-spacing: 12;                /* Espaçamento entre elementos se for VBox */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 4, 0, 0, 2); /* Sombra suave */
+}
+
+.text-field1 {
+    -fx-background-color: #ffffff;             /* Fundo branco */
+    -fx-border-color: #1c2026;                 /* Borda roxa clara */
+    -fx-border-width: 2;                       /* Espessura da borda */
+    -fx-border-radius: 6;                      /* Cantos levemente arredondados */
+    -fx-padding: 4 8;                          /* Espaçamento interno */
+    -fx-font-family: "Segoe UI", sans-serif;   /* Fonte padrão */
+    -fx-font-size: 14px;                       /* Tamanho da fonte */
+    -fx-text-fill: #1c2026;                    /* Cor do texto */
+    -fx-focus-color: #1c2026;                  /* Cor roxa ao focar */
+    -fx-faint-focus-color: transparent;        /* Sem brilho extra ao focar */
+}
+
+.custom-textfield3 {
+    -fx-background-color: transparent; /* sem fundo */
+    -fx-text-fill:#1c2026;            /* cor do texto */
+    -fx-border-color: transparent transparent #30597A transparent; /* apenas a borda inferior */
+    -fx-border-width: 0 0 3px 0;       /* linha inferior um pouco mais grossa */
+    -fx-padding: 8 0 4 0;              /* espaço superior/inferior */
+    -fx-font-size: 16px;               /* tamanho da fonte */
+    -fx-focus-color: transparent;      /* remove borda padrão de foco */
+    -fx-faint-focus-color: transparent;
+}
+
+.custom-textfield3:focused {
+    -fx-border-color: transparent transparent #5F85A1 transparent; /* linha inferior mais clara ao focar */
+    -fx-border-width: 0 0 3px 0;       /* mantém a espessura no foco */
+}
+
+.oval-button {
+    -fx-background-color: #1C2026;   /* fundo preto ou azul bem escuro */
+    -fx-text-fill: white;            /* texto branco */
+    -fx-font-size: 14px;             /* tamanho do texto */
+    -fx-background-radius: 30px;     /* bordas bem arredondadas, oval */
+    -fx-border-radius: 30px;
+    -fx-padding: 8 20;               /* altura e largura confortáveis */
+    -fx-border-color: transparent;   /* sem borda visível */
+    -fx-cursor: hand;                /* cursor de mão */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0.0, 0, 2); /* sombra sutil */
+    -fx-font-weight: bold;           /* texto mais forte, como na imagem */
+}
+
+.oval-button:hover {
+    -fx-background-color: #2A2F36;   /* leve alteração de cor ao passar o mouse */
+}
+
+
+

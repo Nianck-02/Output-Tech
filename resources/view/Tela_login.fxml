@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" style="-fx-background-color: #30597A;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.projeto.javafxmaven.Controles.Tela_login">
+   <left>
+      <VBox prefHeight="810.0" prefWidth="566.0" style="-fx-background-color: #1c2026;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="812.0" prefWidth="566.0" style="-fx-background-color: #1c2026;">
+               <children>
+                  <ImageView fitHeight="813.0" fitWidth="606.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icones/tela.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="124.0" prefWidth="709.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btncriarconta" mnemonicParsing="false" onAction="#telaCadastro" styleClass="button-dark" stylesheets="@../style/estilo.css" text="Criar conta" />
+                  <Label text="Não possui conta?">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="40.0" top="30.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="635.0" prefWidth="709.0">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="178.0" prefWidth="709.0">
+                     <children>
+                        <Label text="LOGIN">
+                           <font>
+                              <Font name="Segoe UI Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="166.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icones/senha.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="171.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icones/user.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <VBox alignment="CENTER_RIGHT" prefHeight="514.0" prefWidth="294.0" spacing="40.0">
+                           <children>
+                              <VBox prefHeight="17.0" prefWidth="270.0">
+                                 <children>
+                                    <TextField fx:id="txtemail" promptText="Nome ou email" styleClass="textfield-underlineblack" stylesheets="@../style/estilo.css" />
+                                 </children>
+                              </VBox>
+                              <PasswordField fx:id="pswsenha" promptText="Senha" styleClass="textfield-underlineblack" stylesheets="@../style/estilo.css" />
+                              <HBox prefHeight="95.0" prefWidth="294.0" spacing="60.0">
+                                 <children>
+                                    <CheckBox fx:id="chcklembrarsenha" mnemonicParsing="false" prefHeight="26.0" prefWidth="219.0" styleClass="checkbox" stylesheets="@../style/estilo.css" text="Lembrar senha">
+                                       <font>
+                                          <Font name="Segoe UI" size="16.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </CheckBox>
+                                    <Button fx:id="btnlogin" mnemonicParsing="false" onAction="#realizarLogin" prefHeight="45.0" prefWidth="158.0" styleClass="button-dark3" stylesheets="@../style/estilo.css" text="Login">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="0.0" prefWidth="294.0">
+                                 <children>
+                                    <Button fx:id="btnesqueceusenha" mnemonicParsing="false" styleClass="button-senha" stylesheets="@../style/estilo.css" text="Esqueceu a senha?">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

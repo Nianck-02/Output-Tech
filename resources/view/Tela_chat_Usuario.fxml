@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.projeto.javafxmaven.Controles.Tela_chat_Usuario">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="right-side-border" stylesheets="@../style/estilo.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="1359.0" spacing="20.0" styleClass="white-background" stylesheets="@../style/estilo.css">
+               <children>
+                  <Label text="CHAT">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox prefHeight="760.0" prefWidth="1064.0">
+               <children>
+                  <HBox prefHeight="761.0" prefWidth="1064.0" styleClass="white-background" stylesheets="@../style/estilo.css">
+                     <children>
+                        <VBox styleClass="white-background" stylesheets="@../style/estilo.css">
+                           <children>
+                              <VBox prefHeight="758.0" prefWidth="340.0" styleClass="right-side-border" stylesheets="@../style/estilo.css">
+                                 <children>
+                                    <ScrollPane prefHeight="805.0" prefWidth="272.0" styleClass="white-background" stylesheets="@../style/estilo.css">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="808.0" prefWidth="337.0" styleClass="white-background" stylesheets="@../style/estilo.css">
+                                             <children>
+                                                <VBox fx:id="listaContatosVBox" layoutY="28.0" prefHeight="763.0" prefWidth="325.0" spacing="1.0">
+                                                   <padding>
+                                                      <Insets top="30.0" />
+                                                   </padding>
+                                                </VBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="3.0" prefHeight="44.0" prefWidth="309.0">
+                                                   <children>
+                                                      <TextField fx:id="txtpesquisar" prefHeight="37.0" prefWidth="299.0" promptText="🔍 pesquisar" HBox.hgrow="ALWAYS">
+                                                         <styleClass>
+                                                            <String fx:value="transparent" />
+                                                            <String fx:value="search-container" />
+                                                         </styleClass>
+                                                         <stylesheets>
+                                                            <URL value="@../style/estilo.css" />
+                                                            <URL value="@../style/estilo.css" />
+                                                         </stylesheets>
+                                                      </TextField>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="BOTTOM_RIGHT" prefHeight="741.0" prefWidth="680.0" stylesheets="@../style/estilo.css">
+                           <children>
+                              <VBox fx:id="vboxperfil" prefHeight="59.0" prefWidth="680.0" />
+                              <ScrollPane prefHeight="669.0" prefWidth="680.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="664.0">
+                                       <children>
+                                          <VBox fx:id="vboxMensagens" layoutX="8.0" prefHeight="727.0" prefWidth="649.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                              <HBox prefHeight="63.0" prefWidth="680.0" styleClass="textfield-style" stylesheets="@../style/estilo.css">
+                                 <children>
+                                    <TextField fx:id="txtchat" prefHeight="46.0" prefWidth="595.0" styleClass="textfield-style2" stylesheets="@../style/estilo.css">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Button fx:id="btnmandarmsg" mnemonicParsing="false" onAction="#enviarMensagem" prefHeight="60.0" prefWidth="156.0" text="Button">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="2.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="699.0" prefWidth="339.0">
+                           <children>
+                              <ScrollPane prefHeight="754.0" prefWidth="317.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="770.0" prefWidth="314.0">
+                                       <children>
+                                          <VBox fx:id="vboxnotification" alignment="TOP_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="775.0" prefWidth="340.0" spacing="10.0" styleClass="white-background">
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="60.0" prefWidth="190.0">
+                                                   <children>
+                                                      <Label text="Notifications">
+                                                         <font>
+                                                            <Font name="System Bold" size="24.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="235.0" spacing="10.0">
+                                                   <children>
+                                                      <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../icones/user.png" />
+                                                         </image>
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" />
+                                                         </HBox.margin>
+                                                      </ImageView>
+                                                      <VBox prefHeight="40.0" prefWidth="126.0">
+                                                         <children>
+                                                            <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="24.0" prefWidth="103.0" stylesheets="@../style/estilo.css" text="User name">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </Button>
+                                                            <Label prefHeight="16.0" prefWidth="122.0" text="Tem uma proposta">
+                                                               <font>
+                                                                  <Font size="10.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <Button mnemonicParsing="false" text="Button" />
+                                                      <Button mnemonicParsing="false" text="Button" />
+                                                   </children>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <padding>
+                                                      <Insets bottom="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
